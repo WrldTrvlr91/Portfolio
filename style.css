@@ -1,18 +1,72 @@
-body {
-    background-color: lightgrey;
+body, html {
+   
+    height: 100%;
+    margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-#headingWhoami {
-    font-size: 52px;
+.navbar, .foliocardstyle, .page-footer{
+    background-color:#202020 !important;
+    color: white !important;
+    
 }
 
-.master-container {
-    background-color: white;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    padding: 20px;
+.foliocardstyle {
+    background-color:#535458;
+    color: white;
+    
+}
 
+
+.nav-link {
+    color: white !important;
+   
+    font-weight: normal !important;
+    
+}
+
+.nav-item :hover {
+    color:  #F14F1D !important;
+    
+}
+
+
+
+
+
+.bg-home {
+     /* The image used */
+  background-image: url(./assets/images/bgHomePage.png);
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+.bg-secondary {
+    /* The image used */
+ background-image: url(./assets/images/bgSecondaryPages.png);
+
+ /* Full height */
+ height: 100%; 
+
+ /* Center and scale the image nicely */
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover; 
+ 
+
+}
+
+.hireMeModalButton {
+    margin-top: 20px;
+    background-color: #F14F1D;
+    font-weight: bold;
+    color:white;
 }
 
 .masterHeader{
@@ -24,6 +78,8 @@ body {
 li {
     font-size: 20px;
     padding-left: 40px;
+    
+ 
 }
 
 .portolioImages {
@@ -31,12 +87,58 @@ li {
     
 }
 
-.fa-github-square, .fa-stack-overflow {
-    color: black;
+.jumbotron-contact {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: .95;
+    border-color:  RGB(50, 50, 50);
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
+#contactForm {
+    position: relative;
+    width: 75%;
+    transform: translateX(+25%);
+    opacity: .95;
+    border-color:  RGB(50, 50, 50);
+    padding-bottom: 20px;
+}
 
-.socialcontacts{
-    align-items: flex-end;
-    padding: 20px;
+#portfolioContainer { 
+    margin-top: 50px;
+    margin-bottom: 50px;
+    min-width: 75%;
+    padding: 50px;
+    
+    background-color: white;
+ }
+
+ #portfolioHeader {
+     padding-bottom: 40px;
+ }
+
+ .card-img-top {
+    width: 100%;
+     height: 17vw;
+    object-fit: contain;
+}
+
+.card-footer a{
+    padding-left: 20px;
+    padding-right: 20px;
+margin-left: 30px;
+background-color: #F14F1D;
+color: white;
+}
+
+.socialLinks {
+    background-color: white;
+    border-radius: 10%;
+    padding: 10px;
+    margin-left: 20px;
 }

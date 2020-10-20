@@ -4,75 +4,123 @@
 <head>
 
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Responsive Portfolio</title>
-
-
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <title>Rob Sonter - Home</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="./style.css" />
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-    crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/029165f009.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
+
   <header>
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-      <!-- Brand -->
-      <a class="navbar-brand" href="./index.html">
-        <img src="./assets/icons/WrldTrvlrLogo.png" alt="logo" width="100" height="100" />
-      </a>
+    <nav class="navbar navbar-expand-md navbar-dark ">
+     <!-- Brand -->
+  <a class="navbar-brand" href="./index.html">
+    <img src="./assets/icons/WrldTrvlrLogo.png" alt="logo" width="100" height="100" />
+  </a>
 
       <!-- Toggler/collapsibe Button -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
       </button>
-
+ 
       <!-- Navbar links -->
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav">
+      <div class="collapse navbar-collapse bg-transparent" id="collapsibleNavbar" >
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" href="./index.html">Home</a>
+            <a class="nav-link" href="./index.html">Home</a>
           </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="./index.html">About Me</a>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link" href="./portfolio.html">Portfolio</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="./assets/Documents/Resume.pdf" target="_blank">Resume</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="./contact.html">Contact</a>
           </li>
+          
         </ul>
+  
+          <a href="https://www.linkedin.com/in/robsonter91/" target="_blank"><img  src="./assets/images/LI-In-Bug.png" height="60px" class="socialLinks nav-link"/></a>
+          <a href="https://github.com/WrldTrvlr91" target="_blank"><img  src="./assets/images/Octocat.png" height="60px" class="socialLinks nav-link"/></a>
+       
       </div>
     </nav>
   </header>
 
-  <div class="container master-container">
-    <div class="row mt-5">
-      <div class="col-12 col-md-6">
-        <h1>about me</h1>
-        <br />
-        <h4>I'm a IT Manager working for a market leading OOHC provider located in Perth</h4>
-        <br />
-        <p>Prior to working within the IT field, I was a social worker supporting children who had experienced
-          significant physical, emotional and sexual abuse.
-        </p>
+  <div class="bg-home">
+    <div class="container-fluid h-50 d-flex">
+      <div class="jumbotron  my-auto bg-transparent">
+        <h1 class="display-1 text-white">Rob Sonter</h1>
+        <h3 class="text-white">Full Stack Web Developer Student</h3>
+        <a type="button" class="btn btn-lg hireMeModalButton" data-toggle="modal" data-target="#staticBackdrop">Hire
+          Me</a>
+      </div>
+      <!-- Vertically centered modal -->
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Request Form</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group row">
+                  <label for="inputFullName" class="col-sm-2 col-form-label">Full Name</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="inputFullName">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                  <div class="col-sm-9">
+                    <input type="email" class="form-control" id="inputEmail">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputContactNumber" class="col-sm-2 col-form-label">Contact Number</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="inputContactNumber">
+                  </div>
+                </div>
+                
 
+                <div class="modal-footer">
+                  <button type="button" class="btn " data-dismiss="modal">Close</button>
+                  <button type="submit" class="btn ">Submit</button>
+                </div>
+              </form>
+
+            </div>
+
+          </div>
+        </div>
       </div>
-      <div class="col-12 col-md-6">
-        <img alt="profile picture of Rob Sonter" src="./assets/images/profilepic.jpg"
-          class="img-fluid mx-auto d-block" />
-      </div>
+
     </div>
   </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+ 
+
 </body>
 
 </html>
